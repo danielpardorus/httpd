@@ -1,0 +1,36 @@
+I, [2017-06-22T10:59:44.344574 #5204]  INFO -- default-centos-72: -----> Converging <default-centos-72>...
+I, [2017-06-22T10:59:44.346529 #5204]  INFO -- default-centos-72: Preparing files for transfer
+I, [2017-06-22T10:59:44.346529 #5204]  INFO -- default-centos-72: Preparing dna.json
+I, [2017-06-22T10:59:44.349462 #5204]  INFO -- default-centos-72: Resolving cookbook dependencies with Berkshelf 4.3.5...
+I, [2017-06-22T10:59:44.483663 #5204]  INFO -- default-centos-72: Removing non-cookbook files before transfer
+I, [2017-06-22T10:59:44.493438 #5204]  INFO -- default-centos-72: Preparing validation.pem
+I, [2017-06-22T10:59:44.495396 #5204]  INFO -- default-centos-72: Preparing client.rb
+I, [2017-06-22T10:59:44.705977 #5204]  INFO -- default-centos-72: -----> Chef Omnibus installation detected (install only if missing)
+I, [2017-06-22T10:59:44.740194 #5204]  INFO -- default-centos-72: Transferring files to <default-centos-72>
+I, [2017-06-22T10:59:46.179064 #5204]  INFO -- default-centos-72: Starting Chef Client, version 13.1.31
+I, [2017-06-22T10:59:47.166905 #5204]  INFO -- default-centos-72: resolving cookbooks for run list: ["httpd::default"]
+I, [2017-06-22T10:59:47.166905 #5204]  INFO -- default-centos-72: Synchronizing Cookbooks:
+I, [2017-06-22T10:59:47.167882 #5204]  INFO -- default-centos-72:   - httpd (0.1.0)
+I, [2017-06-22T10:59:47.182404 #5204]  INFO -- default-centos-72: Installing Cookbook Gems:
+I, [2017-06-22T10:59:47.182404 #5204]  INFO -- default-centos-72: Compiling Cookbooks...
+I, [2017-06-22T10:59:47.182404 #5204]  INFO -- default-centos-72: Converging 3 resources
+I, [2017-06-22T10:59:47.182404 #5204]  INFO -- default-centos-72: Recipe: httpd::default
+I, [2017-06-22T10:59:59.432066 #5204]  INFO -- default-centos-72:   * yum_package[httpd] action install
+I, [2017-06-22T10:59:59.432066 #5204]  INFO -- default-centos-72:     - install version 2.4.6-45.el7.centos.4 of package httpd
+I, [2017-06-22T10:59:59.432066 #5204]  INFO -- default-centos-72:   * file[/var/www/html/index.html] action create
+I, [2017-06-22T10:59:59.432066 #5204]  INFO -- default-centos-72:     - create new file /var/www/html/index.html
+I, [2017-06-22T10:59:59.432066 #5204]  INFO -- default-centos-72:     - update content in file /var/www/html/index.html from none to 614c3a
+I, [2017-06-22T10:59:59.433005 #5204]  INFO -- default-centos-72:     --- /var/www/html/index.html	2017-06-22 08:59:57.476013096 +0000
+I, [2017-06-22T10:59:59.433005 #5204]  INFO -- default-centos-72:     +++ /var/www/html/.chef-index20170622-11821-1pnojmf.html	2017-06-22 08:59:57.476013096 +0000
+I, [2017-06-22T10:59:59.433005 #5204]  INFO -- default-centos-72:     @@ -1 +1,2 @@
+I, [2017-06-22T10:59:59.490567 #5204]  INFO -- default-centos-72:     +<h1>Welcome Home!</h1>
+I, [2017-06-22T10:59:59.490567 #5204]  INFO -- default-centos-72:     - restore selinux security context
+I, [2017-06-22T10:59:59.633517 #5204]  INFO -- default-centos-72:   * service[httpd] action enable
+I, [2017-06-22T10:59:59.633517 #5204]  INFO -- default-centos-72:     - enable service service[httpd]
+I, [2017-06-22T10:59:59.763081 #5204]  INFO -- default-centos-72:   * service[httpd] action start
+I, [2017-06-22T10:59:59.763081 #5204]  INFO -- default-centos-72:     - start service service[httpd]
+I, [2017-06-22T10:59:59.796329 #5204]  INFO -- default-centos-72: 
+I, [2017-06-22T10:59:59.796329 #5204]  INFO -- default-centos-72: Running handlers:
+I, [2017-06-22T10:59:59.796329 #5204]  INFO -- default-centos-72: Running handlers complete
+I, [2017-06-22T10:59:59.796329 #5204]  INFO -- default-centos-72: Chef Client finished, 4/4 resources updated in 13 seconds
+I, [2017-06-22T10:59:59.830535 #5204]  INFO -- default-centos-72: Finished converging <default-centos-72> (0m15.48s).
