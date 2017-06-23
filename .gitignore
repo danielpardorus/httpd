@@ -1,1 +1,2 @@
 .kitchen/
+.rubocop_todo.yml
