@@ -7,4 +7,7 @@
 include_recipe "httpd::install"
 include_recipe "httpd::configuration"
 include_recipe "httpd::service"
+include_recipe "httpd::install"
+include_recipe "httpd::configuration"
+include_recipe "httpd::service"
 #
